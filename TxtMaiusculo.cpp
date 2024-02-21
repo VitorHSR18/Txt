@@ -27,7 +27,7 @@ void ArquivoTxtMaiusculoString(char NomeArq[50])
 	fgets(linha,100,PtrTxt);
 	while(!feof(PtrTxt))
 	{
-		strupr(linha);
+		strupr(linha); // muda a string toda para maiusculo
 		fputs(linha,PtrMaisc);
 		fgets(linha,100,PtrMaisc);
 	}
